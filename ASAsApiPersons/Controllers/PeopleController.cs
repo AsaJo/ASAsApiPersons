@@ -18,7 +18,7 @@ namespace ASAsApiPersons.Controllers
 
         #region Get
 
-        [HttpGet("all")]
+        [HttpGet]
         [ProducesResponseType(200)]
         public IEnumerable<PersonViewModel> Get()
         {
@@ -27,7 +27,7 @@ namespace ASAsApiPersons.Controllers
             
         }
 
-        [HttpGet]
+        [HttpGet("email")]
         [ProducesResponseType(200)]
         public IEnumerable<PersonViewModel> Get([FromQuery] string email = null)
         {
