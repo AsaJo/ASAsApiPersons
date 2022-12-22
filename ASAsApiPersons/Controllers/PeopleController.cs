@@ -29,7 +29,7 @@ namespace ASAsApiPersons.Controllers
 
         [HttpGet("email")]
         [ProducesResponseType(200)]
-        public IEnumerable<PersonViewModel> Get([FromQuery] string email = null)
+        public IEnumerable<PersonViewModel> Get([FromQuery] string? email = null)
         {
             IEnumerable<PersonViewModel> model;
 
